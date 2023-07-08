@@ -13,37 +13,37 @@ export const links = [
   {
     name: "Home",
     icon: <AiFillHome />,
-    link: "#home",
+    link: "/#home",
   },
   {
     name: "About",
     icon: <FaUserGraduate />,
-    link: "#about",
+    link: "/#about",
   },
   {
     name: "Resume",
     icon: <FaBriefcase />,
-    link: "#resume",
+    link: "/#resume",
   },
   {
     name: "Services",
     icon: <FaLaptopCode />,
-    link: "#services",
+    link: "/#services",
   },
   {
     name: "Skills",
     icon: <FaTools />,
-    link: "#skills",
+    link: "/#skills",
   },
   {
     name: "Projects",
     icon: <BsGrid1X2Fill />,
-    link: "#projects",
+    link: "/#projects",
   },
   {
     name: "Testimoials",
     icon: <BiSolidCommentDetail />,
-    link: "#testimonials",
+    link: "/#testimonials",
   },
   {
     name: "Contact",

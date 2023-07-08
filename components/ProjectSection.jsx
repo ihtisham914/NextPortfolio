@@ -40,8 +40,8 @@ const ProjectSection = () => {
                     : "h-52 w-80"
                 }`}
                 loading="lazy"
-                height={200}
-                width={300}
+                height={1500}
+                width={2000}
               />
               {/* tags */}
               <div
