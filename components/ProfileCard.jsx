@@ -29,14 +29,14 @@ const ProfileCard = () => {
 
       {/* SIDE MENU */}
       <div
-        className={`bg-black h-full w-[75vw] sm:w-[50vw] md:w-[40vw] p-12 flex items-start  text-gray z-50 fixed top-0 right-0 transform transition-transform ${
+        className={`bg-black h-full w-[75vw] sm:w-[50vw] md:w-[40vw] p-12 flex items-start z-50 fixed top-0 right-0 transform transition-transform ${
           modal
             ? "translate-x-0 sm:translate-x-0 md:translate-x-0 lg:hidden xl:hidden"
             : "translate-x-[100vw] sm:translate-x-[100vw] md:translate-x-[100vw] lg:hidden xl:hidden"
         }`}
       >
         <div className="w-full">
-          <div className="flex items-center justify-between w-full">
+          <div className="flex items-center justify-between w-full text-gray">
             <span>Menu</span>
             <div
               onClick={() => setModal(false)}
@@ -47,15 +47,16 @@ const ProfileCard = () => {
           </div>
           <div className="flex flex-col gap-4 items-start mt-16">
             {links.map((link, index) => (
-              <Link
+              <a
                 onClick={() => setModal(false)}
+                title={link.name}
                 key={index}
                 href={link.link}
-                className="flex items-center gap-2"
+                className="flex items-center gap-5 text-gray hover:text-primarycolor cursor-pointer transition-all active:text-primarycolor"
               >
                 {link.icon}
                 {link.name}
-              </Link>
+              </a>
             ))}
           </div>
         </div>
