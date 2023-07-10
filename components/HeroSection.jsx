@@ -18,13 +18,13 @@ const HeroSection = () => {
         I am Committed to delivering high-quality results and motivated by my
         passion for technology and my dedication to my craft.
       </p>
-      <Link
+      <a
         href="#projects"
         className="mt-12 uppercase flex items-center justify-center gap-2 bg-black text-primarycolor hover:border-primarycolor py-2 px-6 rounded-full border-2 border-gray transition-all w-fit"
       >
         <BsArrowDownCircleFill className="text-xl" />
         <span className="text-md">Projects</span>
-      </Link>
+      </a>
     </section>
   );
 };

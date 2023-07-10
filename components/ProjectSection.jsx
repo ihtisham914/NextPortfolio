@@ -36,18 +36,18 @@ const ProjectSection = () => {
                 src={project.image}
                 className={`rounded-2xl ${
                   project.name === "Community cleanup"
-                    ? "h-52 sm:h-52 md:h-64 lg:h-64 xl:h-64 sm:w-80 md:w-[50%] lg:w-[50%] xl:w-[50%]"
+                    ? "h-52 sm:h-52 md:h-96 lg:h-96 xl:h-96 w-80 sm:w-80 md:w-[50%] lg:w-[45%] xl:w-[50%]"
                     : "h-52 w-80"
                 }`}
                 loading="lazy"
-                height={1500}
-                width={2000}
+                height={1000}
+                width={1000}
               />
               {/* tags */}
               <div
                 className={`${
                   project.name === "Community cleanup" &&
-                  "flex flex-col gap-4 justify-between"
+                  "flex flex-col gap-4 justify-between md:w-[45%] lg:w-[45%]"
                 }`}
               >
                 <div className="flex items-center flex-wrap gap-2 mt-2">

@@ -12,7 +12,7 @@ import { links } from "@/public/data/navbar";
 const ProfileCard = () => {
   const [modal, setModal] = useState(false);
   return (
-    <div className="block lg:fixed xl:fixed lg:top-8 xl:top-8 border border-gray rounded-3xl  w-full lg:w-[25%] xl:w-[25%] h-fit">
+    <div className="block lg:fixed xl:fixed lg:top-8 xl:top-8 border border-gray rounded-3xl  w-full lg:w-[25%] xl:w-[25%] h-[90%]">
       {/* OVERLAY */}
       {modal ? (
         <div
@@ -109,13 +109,13 @@ const ProfileCard = () => {
             <SiGitlab />
           </Link>
         </div>
-        <Link
+        <a
           href="#contact"
           className="uppercase flex items-center justify-center gap-2 bg-primarycolor text-background w-full p-3 rounded-full border-2 border-primarycolor hover:bg-background hover:text-primarycolor transition-all"
         >
           <MdEmail className="text-xl" />
           <span className="text-lg">Hire me!</span>
-        </Link>
+        </a>
       </div>
     </div>
   );
