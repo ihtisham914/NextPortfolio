@@ -18,7 +18,7 @@ export const projects = [
     name: "Community cleanup",
     demo: "https://fyp-wsscm-system.vercel.app",
     code: "https://gitlab.com/grey-software/nest/community-cleanup",
-    image: "/dummy.png",
+    image: "/dummy.jpg",
     desc: "A community cleanup project in KPK revolutionizes WSSCs with a Progressive Web App, improving management, handling complaints, and monitoring employee activities for better service delivery.",
     tags: [
       {
@@ -102,7 +102,7 @@ export const projects = [
     name: "Guess Number Game",
     demo: "https://quiz-game-ihtisham914.vercel.app",
     code: "https://github.com/ihtisham914/QuizGame",
-    image: "/dummy.png",
+    image: "/dummy.jpg",
     desc: "A mathimatics quiz game",
     tags: [
       {
