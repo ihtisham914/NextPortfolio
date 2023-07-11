@@ -1,13 +1,38 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { BsGrid1X2Fill, BsGithub } from "react-icons/bs";
 import { TbWorldCheck } from "react-icons/tb";
 import { projects } from "@/public/data/projects";
-
+import { MdClose } from "react-icons/md";
 const ProjectSection = () => {
+  const [pic, setpic] = useState("");
+  const [modal, setModal] = useState(false);
   return (
     <section id="projects" className="my-8 pt-28">
+      {/* OVERLAY */}
+      {modal && (
+        <div
+          onClick={() => {
+            setModal(false);
+            setpic("");
+          }}
+          className="fixed top-0 left-0 right-0 bottom-0 h-screen w-screen z-30 bg-gray bg-opacity-90"
+        >
+          <div className="absolute right-8 top-4 p-2 rounded-full border border-white text-white hover:border-red-500 hover:text-red-500 transition-all cursor-pointer z-50 text-lg">
+            <MdClose />
+          </div>
+        </div>
+      )}
+      {/* show image */}
+      {modal && (
+        <img
+          className="fixed top-[25%] sm:top-[20%] md:top-[20%] lg:top-0 xl:top-0 left-0 h-auto sm:h-auto md:h-auto lg:h-screen xl:h-screen w-[90vw] z-50"
+          src={pic}
+        />
+      )}
+
       {/* TAG */}
       <div className="flex items-center justify-center gap-4 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
         <BsGrid1X2Fill /> <span className="uppercase">Portfolio</span>
@@ -33,8 +58,12 @@ const ProjectSection = () => {
               }`}
             >
               <Image
+                onClick={() => {
+                  setpic(project.image);
+                  setModal(true);
+                }}
                 src={project.image}
-                className={`rounded-2xl ${
+                className={`rounded-2xl cursor-pointer ${
                   project.name === "Community cleanup"
                     ? "h-52 sm:h-52 md:h-96 lg:h-96 xl:h-96 w-80 sm:w-80 md:w-[50%] lg:w-[45%] xl:w-[50%]"
                     : "h-52 w-80"

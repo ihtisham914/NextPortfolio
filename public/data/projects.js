@@ -55,7 +55,7 @@ export const projects = [
     name: "Chatify",
     demo: "https://chatify-react.vercel.app",
     code: "https://github.com/ihtisham914/ChatApplication-react-vite-firebase",
-    image: "/chatify.png",
+    image: "/chatifyp.png",
     desc: "An instant web chatting app",
     tags: [
       {
@@ -72,7 +72,7 @@ export const projects = [
     name: "Sttrand",
     demo: "https://sttrand.vercel.app",
     code: "https://github.com/ihtisham914/Sttrand",
-    image: "/sttrand.png",
+    image: "/sttrandp.png",
     desc: "An informative website for B2B App",
     tags: [
       {
@@ -102,7 +102,7 @@ export const projects = [
     name: "Guess Number Game",
     demo: "https://quiz-game-ihtisham914.vercel.app",
     code: "https://github.com/ihtisham914/QuizGame",
-    image: "/dummy.jpg",
+    image: "/game.png",
     desc: "A mathimatics quiz game",
     tags: [
       {
