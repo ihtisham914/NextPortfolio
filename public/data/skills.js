@@ -3,11 +3,17 @@ import {
   SiTailwindcss,
   SiChakraui,
   SiJavascript,
+  SiTypescript,
   SiPhp,
   SiNextdotjs,
   SiExpress,
   SiMongodb,
+  SiPostman,
+  SiMysql,
 } from "react-icons/si";
+import { BiLogoFigma } from "react-icons/bi";
+import { BsGit } from "react-icons/bs";
+import { TbBrandRedux } from "react-icons/tb";
 
 export const skills = [
   {
@@ -36,6 +42,12 @@ export const skills = [
     color: "text-yellow-500",
   },
   {
+    name: "TypeScript",
+    percent: 80,
+    icon: <SiTypescript />,
+    color: "text-yellow-500",
+  },
+  {
     name: "PHP",
     percent: 75,
     icon: <SiPhp />,
@@ -45,6 +57,12 @@ export const skills = [
     name: "React",
     percent: 90,
     icon: <FaReact />,
+    color: "text-blue-500",
+  },
+  {
+    name: "Redux",
+    percent: 95,
+    icon: <TbBrandRedux />,
     color: "text-blue-500",
   },
   {
@@ -69,6 +87,30 @@ export const skills = [
     name: "MongoDb",
     percent: 75,
     icon: <SiMongodb />,
+    color: "text-green-600",
+  },
+  {
+    name: "Figma",
+    percent: 65,
+    icon: <BiLogoFigma />,
+    color: "text-green-600",
+  },
+  {
+    name: "Postman",
+    percent: 85,
+    icon: <SiPostman />,
+    color: "text-green-600",
+  },
+  {
+    name: "Git",
+    percent: 80,
+    icon: <BsGit />,
+    color: "text-green-600",
+  },
+  {
+    name: "MySql",
+    percent: 78,
+    icon: <SiMysql />,
     color: "text-green-600",
   },
 ];
