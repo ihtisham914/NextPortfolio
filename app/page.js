@@ -5,7 +5,6 @@ import ResumeSection from "@/components/ResumeSection";
 import ServiceSection from "@/components/ServiceSection";
 import SkillSection from "@/components/SkillSection";
 import { links } from "@/public/data/navbar";
-import Link from "next/link";
 import ProjectSection from "@/components/ProjectSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import ContactSection from "@/components/ContactSection";

@@ -19,7 +19,7 @@ const SkillSection = () => {
               key={index}
               className="flex flex-col items-center gap-4 p-12 border-2 border-gray rounded-full hover:text-primarycolor hover:border-primarycolor cursor-default tranisition-all"
             >
-              <span className={`${skill.color} text-6xl`}>{skill.icon}</span>
+              <span className={`text-6xl`}>{skill.icon}</span>
               <span className="text-primarycolor text-3xl">
                 {skill.percent}%
               </span>

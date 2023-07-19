@@ -1,11 +1,17 @@
+"use client";
 import { AiFillHome } from "react-icons/ai";
 import { BsArrowDownCircleFill } from "react-icons/bs";
 import React from "react";
-import Link from "next/link";
+import { motion, useScroll } from "framer-motion";
 
 const HeroSection = () => {
+  const { scrollYProgress } = useScroll();
   return (
     <section id="home" className="h-[90vh] pt-16">
+      <motion.div
+        className="fixed top-0 left-0 right-0 bottom-0 bg-primarycolor h-2 origin-[0%]"
+        style={{ scaleX: scrollYProgress }}
+      />
       {/* TAG */}
       <div className="flex items-center justify-center gap-3 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
         <AiFillHome /> <span className="uppercase">Introduce</span>
