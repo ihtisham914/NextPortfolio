@@ -12,14 +12,18 @@ const AboutSection = () => {
         <FaUserGraduate /> <span className="uppercase">About</span>
       </div>
       <p className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl  mt-16 tracking-wide">
-        Every great design begin with an even better story
+        Every Captivating Tech Endeavor Commences with a Remarkable Journey
       </p>
       <p className="text-gray mt-12">
-        Since beginning my journey as a freelance designer nearly 8 years ago,
-        I've done remote work for agencies, consulted for startups, and
-        collaborated with talented people to create digital products for both
-        business and consumer use. I'm quietly confident, naturally curious, and
-        perpetually working on improving my chopsone design problem at a time.
+        I am a software engineer and MERN developer, and my journey began with
+        HTML, CSS, and JavaScript, leading me to immerse myself in the
+        captivating world of React for two transformative years. During this
+        time, I had the honor of collaborating with the esteemed "Grey Software"
+        on a groundbreaking Final Year Project, leaving an indelible mark on my
+        path. This experience taught me a great deal, highlighting the magical
+        possibilities of technology and serving as a testament to my passion and
+        dedication as I continue to evolve and create, driven by the belief that
+        technology can shape the world in unimaginable ways.
       </p>
     </section>
   );

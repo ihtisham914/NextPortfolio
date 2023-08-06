@@ -54,16 +54,6 @@ export default function Home() {
               {link.icon}
               {link.name}
             </a>
-            // <Link
-            //   title={link.name}
-            //   key={index}
-            //   href={link.link}
-            //   scroll={false}
-            //   className="flex items-center gap-5 hover:text-primarycolor cursor-pointer transition-all"
-            // >
-            //   {link.icon}
-            //   {link.name}
-            // </Link>
           ))}
         </div>
       </div>

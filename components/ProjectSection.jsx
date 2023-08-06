@@ -46,6 +46,7 @@ const ProjectSection = () => {
         {projects.map((project, index) => (
           <div
             key={index}
+            data-aos="flip-left"
             className={`flex items-center justify-center ${
               project.name === "Community cleanup" &&
               "col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-2"
