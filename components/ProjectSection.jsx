@@ -30,6 +30,7 @@ const ProjectSection = () => {
         <img
           className="fixed top-[25%] sm:top-[20%] md:top-[20%] lg:top-0 xl:top-0 left-0 h-auto sm:h-auto md:h-auto lg:h-screen xl:h-screen w-[90vw] z-50"
           src={pic}
+          alt="project picture"
         />
       )}
 
@@ -71,6 +72,7 @@ const ProjectSection = () => {
                 loading="lazy"
                 height={1000}
                 width={1000}
+                alt={project.name}
               />
               {/* tags */}
               <div

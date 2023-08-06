@@ -67,6 +67,7 @@ const ProfileCard = () => {
           className="hidden sm:hidden md:block lg:block xl:block rounded-3xl"
           width={40}
           height={40}
+          alt="Logo"
         />
         <h1 className="text-3xl font-semibold">Ihtisham Ul Haq</h1>
         <div className="hidden sm:hidden md:block lg:hidden xl:hidden"></div>
@@ -84,6 +85,7 @@ const ProfileCard = () => {
           className="rounded-3xl"
           width={250}
           height={250}
+          alt="Ihtisham's Dp"
         />
         <h2 className="text-2xl font-semibold text-center">
           Software Engineer & Web Developer

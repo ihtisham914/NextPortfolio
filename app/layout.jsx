@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
       <body className="bg-black flex items-start justify-center text-white">
         {children}
       </body>
-      <script>AOS.init();</script>
     </html>
   );
 }

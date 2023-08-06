@@ -13,7 +13,11 @@ const ContactSection = () => {
 
       {/* CONTACT */}
       <p className="mt-4">shaami.khn321@gmail.com</p>
-      <form className="mt-8 grid grid-col-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-y-12 items-center justify-between">
+      <form
+        action="https://formspree.io/f/mgejognr"
+        method="post"
+        className="mt-8 grid grid-col-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-y-12 items-center justify-between"
+      >
         <div className="flex flex-col gap-1">
           <label htmlFor="name" className="uppercase text-sm">
             Name <span className="text-red-500">*</span>
@@ -31,7 +35,7 @@ const ContactSection = () => {
             Email <span className="text-red-500">*</span>
           </label>
           <input
-            type="text"
+            type="email"
             name="email"
             id="email"
             className="text-lg outline-none bg-black text-white placeholder:text-gray"
@@ -55,7 +59,7 @@ const ContactSection = () => {
             Phone <span className="text-gray">(optional)</span>
           </label>
           <input
-            type="text"
+            type="phone"
             name="phone"
             id="phone"
             className="text-lg outline-none bg-black text-white placeholder:text-gray"
