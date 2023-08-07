@@ -18,7 +18,7 @@ export const projects = [
     name: "Community cleanup",
     demo: "https://fyp-wsscm-system.vercel.app",
     code: "https://gitlab.com/grey-software/nest/community-cleanup",
-    image: "/dummy.jpg",
+    image: "/wssc.png",
     desc: "A community cleanup project in KPK revolutionizes WSSCs with a Progressive Web App, improving management, handling complaints, and monitoring employee activities for better service delivery.",
     tags: [
       {
