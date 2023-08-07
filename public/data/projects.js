@@ -99,6 +99,27 @@ export const projects = [
     ],
   },
   {
+    name: "Bankist",
+    demo: "https://bankist-react-self.vercel.app",
+    code: "https://github.com/ihtisham914/bankist-react",
+    image: "/bankist.png",
+    desc: "A minimalist banking app",
+    tags: [
+      {
+        name: "React",
+        icon: <FaReact />,
+      },
+      {
+        name: "HTML",
+        icon: <FaHtml5 />,
+      },
+      {
+        name: "CSS",
+        icon: <FaCss3Alt />,
+      },
+    ],
+  },
+  {
     name: "Guess Number Game",
     demo: "https://quiz-game-ihtisham914.vercel.app",
     code: "https://github.com/ihtisham914/QuizGame",

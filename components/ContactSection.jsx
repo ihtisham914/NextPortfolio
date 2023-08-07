@@ -26,6 +26,7 @@ const ContactSection = () => {
             type="text"
             name="name"
             id="name"
+            required
             className="text-lg outline-none bg-black text-white placeholder:text-gray"
             placeholder="Your good name"
           />
@@ -38,6 +39,7 @@ const ContactSection = () => {
             type="email"
             name="email"
             id="email"
+            required
             className="text-lg outline-none bg-black text-white placeholder:text-gray"
             placeholder="Your email address"
           />
@@ -50,6 +52,7 @@ const ContactSection = () => {
             type="text"
             name="subject"
             id="subject"
+            required
             className="text-lg outline-none bg-black text-white placeholder:text-gray"
             placeholder="Enter subject"
           />

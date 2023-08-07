@@ -101,6 +101,7 @@ const ProjectSection = () => {
                 <div className="flex items-center justify-between mt-4">
                   <Link
                     href={project.demo}
+                    target="_blank"
                     className="uppercase flex items-center justify-center gap-2 bg-primarycolor text-background py-2 px-4 rounded-full border-2 border-primarycolor hover:bg-background hover:text-primarycolor text-sm transition-all"
                   >
                     <TbWorldCheck className="text-lg" />
@@ -108,6 +109,7 @@ const ProjectSection = () => {
                   </Link>
                   <Link
                     href={project.code}
+                    target="_blank"
                     className="uppercase flex items-center justify-center gap-2 bg-black text-primarycolor py-2 px-4 rounded-full border-2 border-primarycolor hover:bg-primarycolor hover:text-background text-sm transition-all"
                   >
                     <BsGithub className="text-lg" />
