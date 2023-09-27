@@ -12,6 +12,7 @@ import {
   SiNodedotjs,
 } from "react-icons/si";
 import { BsFillCloudArrowUpFill } from "react-icons/bs";
+import { BiLogoGraphql } from "react-icons/bi";
 
 export const projects = [
   {
@@ -19,6 +20,8 @@ export const projects = [
     demo: "https://fyp-wsscm-system.vercel.app",
     code: "https://gitlab.com/grey-software/nest/community-cleanup",
     image: "/wssc.png",
+    video:
+      "https://res.cloudinary.com/dgpwe8xy6/video/upload/v1695807400/Fyp-Demonstration-Final_1_ptzfvb.mp4",
     desc: "A community cleanup project in KPK revolutionizes WSSCs with a Progressive Web App, improving management, handling complaints, and monitoring employee activities for better service delivery.",
     tags: [
       {
@@ -65,6 +68,31 @@ export const projects = [
       {
         name: "Firebase",
         icon: <SiFirebase />,
+      },
+    ],
+  },
+  {
+    name: "Carnaval radio",
+    demo: "https://site.carnaval-radio.nl",
+    code: "https://github.com/carnaval-radio/carnaval-radio-frontend",
+    image: "/carnaval.png",
+    desc: "A non-profit internet radio station focused on local carnaval music in the south of the Netherlands.",
+    tags: [
+      {
+        name: "NextJs",
+        icon: <SiNextdotjs />,
+      },
+      {
+        name: "TypeScript",
+        icon: <SiTypescript />,
+      },
+      {
+        name: "GraphQl",
+        icon: <BiLogoGraphql />,
+      },
+      {
+        name: "Tailwind",
+        icon: <SiTailwindcss />,
       },
     ],
   },

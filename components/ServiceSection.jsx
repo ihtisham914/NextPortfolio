@@ -46,7 +46,7 @@ const ServiceSection = () => {
             <MdSupport className="text-3xl text-primarycolor" />
           </div>
           <p className="text-gray mt-2">
-            I create beautifull web apps with MERN stack
+            I maintain websites and web apps for client
           </p>
           <p className="uppercase mt-8 text-sm underline cursor-pointer">
             2 projects

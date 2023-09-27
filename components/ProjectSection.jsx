@@ -58,22 +58,30 @@ const ProjectSection = () => {
                 "w-full flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row items-center justify-between"
               }`}
             >
-              <Image
-                onClick={() => {
-                  setpic(project.image);
-                  setModal(true);
-                }}
-                src={project.image}
-                className={`rounded-2xl cursor-pointer ${
-                  project.name === "Community cleanup"
-                    ? "h-52 sm:h-52 md:h-96 lg:h-96 xl:h-96 w-80 sm:w-80 md:w-[50%] lg:w-[45%] xl:w-[50%]"
-                    : "h-52 w-80"
-                }`}
-                loading="lazy"
-                height={1000}
-                width={1000}
-                alt={project.name}
-              />
+              {project.video ? (
+                <video
+                  src={project.video}
+                  controls
+                  className="h-52 sm:h-52 md:h-96 lg:h-96 xl:h-96 w-80 sm:w-80 md:w-[50%] lg:w-[45%] xl:w-[50%]"
+                ></video>
+              ) : (
+                <Image
+                  onClick={() => {
+                    setpic(project.image);
+                    setModal(true);
+                  }}
+                  src={project.image}
+                  className={`rounded-2xl cursor-pointer ${
+                    project.name === "Community cleanup"
+                      ? "h-52 sm:h-52 md:h-96 lg:h-96 xl:h-96 w-80 sm:w-80 md:w-[50%] lg:w-[45%] xl:w-[50%]"
+                      : "h-52 w-80"
+                  }`}
+                  loading="lazy"
+                  height={1000}
+                  width={1000}
+                  alt={project.name}
+                />
+              )}
               {/* tags */}
               <div
                 className={`${
