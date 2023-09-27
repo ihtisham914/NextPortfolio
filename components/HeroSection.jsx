@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="flex items-center justify-center gap-3 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
         <AiFillHome /> <span className="uppercase">Introduce</span>
       </div>
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-extralight mt-16 leading-tight tracking-wide">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-light mt-16 leading-tight tracking-wide">
         Hello from <span className="text-primarycolor">Ihtisham</span>, Software
         Engineer and Web Developer
       </h2>
