@@ -75,7 +75,7 @@ export const projects = [
     name: "Carnaval radio",
     demo: "https://site.carnaval-radio.nl",
     code: "https://github.com/carnaval-radio/carnaval-radio-frontend",
-    image: "/carnaval.png",
+    image: "/carnaval.jpg",
     desc: "A non-profit internet radio station focused on local carnaval music in the south of the Netherlands.",
     tags: [
       {
