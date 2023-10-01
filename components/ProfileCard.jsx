@@ -61,7 +61,7 @@ const ProfileCard = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between pt-6 px-4">
+      <div className="flex items-center justify-between pt-6 sm:pt-6 md:pt-6 lg:pt-3 xl:pt-6 px-4">
         <Image
           src="/newlogo.png"
           className="hidden sm:hidden md:block lg:block xl:block rounded-3xl"
@@ -69,7 +69,7 @@ const ProfileCard = () => {
           height={35}
           alt="Logo"
         />
-        <h1 className="text-3xl font-semibold">Ihtisham Ul Haq</h1>
+        <h1 className="text-2xl font-semibold">Ihtisham Ul Haq</h1>
         <div className="hidden sm:hidden md:block lg:hidden xl:hidden"></div>
         {/* SIDE MENU TOGGLE */}
         <div
@@ -79,15 +79,15 @@ const ProfileCard = () => {
           <BiMenu />
         </div>
       </div>
-      <div className="flex items-center flex-col gap-6 mt-4 m-6">
+      <div className="flex items-center flex-col gap-6 sm:gap-6 md:gap-6 lg:gap-3 xl:gap-6 mt-4 m-6">
         <Image
           src="/mydp.jpg"
-          className="rounded-3xl"
+          className="rounded-3xl h-[250px] sm:h-[250px] md:h-[250px] lg:h-[200px] xl:h-[250px] w-[250px] sm:w-[250px] md:w-[250px] lg:w-[200px] xl:w-[250px]"
           width={250}
           height={250}
           alt="Ihtisham's Dp"
         />
-        <h2 className="text-2xl font-semibold text-center">
+        <h2 className="text-xl font-semibold text-center">
           Software Engineer & Web Developer
         </h2>
         <p className="text-gray">&copy; Ihtisham. All Rights Reserved.</p>

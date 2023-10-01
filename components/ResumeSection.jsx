@@ -37,8 +37,8 @@ const ResumeSection = () => {
           <div className="h-56 w-[1px] bg-gray -mt-[5px] ml-[5px]"></div>
           <div>
             <div className="mt-6">
-              <p className="text-xl leading-5">Grey Software</p>
-              <p className="mt-2 text-gray">Open Source Apprentice</p>
+              <p className="text-xl leading-5">Open Source Apprentice</p>
+              <p className="mt-2 text-gray">Grey Software</p>
             </div>
             <div className="mt-6">
               <p className="text-xl leading-5">
