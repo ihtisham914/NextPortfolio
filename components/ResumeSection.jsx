@@ -16,20 +16,37 @@ const ResumeSection = () => {
       <div className="flex flex-col items-start mt-14">
         <div className="flex items-center gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-16 text-gray hover:text-primarycolor transition-all -mt-1 cursor-default">
           <div className="h-3 w-3 bg-gray rounded-full hover:bg-primarycolor transition-all"></div>
+          <p className="-ml-1">Present</p>
+        </div>
+        <div className="flex items-start gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-16">
+          <div className="h-36 w-[1px] bg-gray -mt-[5px] ml-[5px]"></div>
+          <div>
+            <div className="mt-8">
+              <p className="text-xl leading-5">Project Manager</p>
+              <p className="mt-2 text-gray">
+                Softipai - Ditigal Marketing Agency
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-16 text-gray hover:text-primarycolor transition-all -mt-1 cursor-default">
+          <div className="h-3 w-3 bg-gray rounded-full hover:bg-primarycolor transition-all"></div>
           <p className="-ml-1">2019 - 2023</p>
         </div>
         <div className="flex items-start gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-16">
           <div className="h-56 w-[1px] bg-gray -mt-[5px] ml-[5px]"></div>
           <div>
             <div className="mt-6">
-              <p className="text-xl leading-5">Open Source Apprentice</p>
-              <p className="mt-2 text-gray">Grey Software</p>
+              <p className="text-xl leading-5">Grey Software</p>
+              <p className="mt-2 text-gray">Open Source Apprentice</p>
             </div>
             <div className="mt-6">
               <p className="text-xl leading-5">
+                Bachelors in Computer Software Engineering
+              </p>
+              <p className="mt-2 text-gray">
                 University of Engineering and Technology Mardan
               </p>
-              <p className="mt-2 text-gray">BS Computer Software Engineering</p>
             </div>
           </div>
         </div>
@@ -42,10 +59,10 @@ const ResumeSection = () => {
           <div className="h-40 w-[1px] bg-gray -mt-[5px] ml-[5px]"></div>
           <div>
             <div className="mt-6">
-              <p className="text-xl leading-5">
+              <p className="text-xl leading-5">Fsc Pre-Engineering</p>
+              <p className="mt-2 text-gray">
                 Quaid e Azam Group of Schools and Colleges
               </p>
-              <p className="mt-2 text-gray">Fsc Pre-Engineering</p>
             </div>
           </div>
         </div>
@@ -58,8 +75,8 @@ const ResumeSection = () => {
           <div className="h-24 w-[1px] bg-gray -mt-[5px] ml-[5px]"></div>
           <div>
             <div className="mt-8">
-              <p className="text-xl leading-5">Iqra Education System</p>
-              <p className="mt-2 text-gray">Matric</p>
+              <p className="text-xl leading-5">Matriculation</p>
+              <p className="mt-2 text-gray">Iqra Education System</p>
             </div>
           </div>
         </div>

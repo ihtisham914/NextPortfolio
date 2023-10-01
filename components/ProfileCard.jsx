@@ -63,10 +63,10 @@ const ProfileCard = () => {
       </div>
       <div className="flex items-center justify-between pt-6 px-4">
         <Image
-          src="/logo.png"
+          src="/newlogo.png"
           className="hidden sm:hidden md:block lg:block xl:block rounded-3xl"
-          width={40}
-          height={40}
+          width={35}
+          height={35}
           alt="Logo"
         />
         <h1 className="text-3xl font-semibold">Ihtisham Ul Haq</h1>

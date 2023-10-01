@@ -15,11 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <link
-          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-          rel="stylesheet"
-        ></link>
+        <link rel="icon" href="/newlogo.png" />
       </head>
       <body
         className={`${OpenSans.className} bg-black flex items-start justify-center text-white`}
