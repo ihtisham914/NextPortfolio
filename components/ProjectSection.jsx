@@ -6,6 +6,7 @@ import { BsGrid1X2Fill, BsGithub } from "react-icons/bs";
 import { TbWorldCheck } from "react-icons/tb";
 import { projects } from "@/public/data/projects";
 import { MdClose } from "react-icons/md";
+import Tag from "./Tag";
 const ProjectSection = () => {
   const [pic, setpic] = useState("");
   const [modal, setModal] = useState(false);
@@ -35,9 +36,7 @@ const ProjectSection = () => {
       )}
 
       {/* TAG */}
-      <div className="flex items-center justify-center gap-4 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
-        <BsGrid1X2Fill /> <span className="uppercase">Portfolio</span>
-      </div>
+      <Tag icon={<BsGrid1X2Fill />} text="Portfolio" />
       <p className="text-5xl mt-16 font-light tracking-wide">
         Featured <span className="text-primarycolor">Projects</span>
       </p>
@@ -50,7 +49,7 @@ const ProjectSection = () => {
             className={`flex items-center justify-center ${
               project.name === "Community cleanup" &&
               "col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-2"
-            } p-4 border border-gray hover:border-primarycolor rounded-3xl transition-all hover:scale-[1.02]`}
+            } p-4 border-2 border-gray hover:border-primarycolor rounded-3xl transition-all hover:-translate-y-2 hover:shadow-lg hover:shadow-gray`}
           >
             <div
               className={`${
@@ -103,7 +102,7 @@ const ProjectSection = () => {
 
                 {/* name */}
                 <h1 className="mt-4 text-3xl font-bold">{project.name}</h1>
-                <p>{project.desc}</p>
+                <p className="text-[#e1e1e1]">{project.desc}</p>
 
                 {/* CALL TO ACTION */}
                 <div className="flex items-center justify-between mt-4">

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUserGraduate } from "react-icons/fa";
+import Tag from "./Tag";
 
 const AboutSection = () => {
   return (
@@ -8,11 +9,11 @@ const AboutSection = () => {
       className="h-[90vh] flex flex-col items-start justify-center pt-2"
     >
       {/* TAG */}
-      <div className="flex items-center justify-center gap-4 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
-        <FaUserGraduate /> <span className="uppercase">About</span>
-      </div>
+      <Tag icon={<FaUserGraduate />} text="About" />
       <p className="text-3xl font-light sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl  mt-16 tracking-wide">
-        Every Captivating Tech Endeavor Commences with a Remarkable Journey
+        Every Captivating{" "}
+        <span className="text-primarycolor">Tech Endeavor</span> Commences with
+        a Remarkable Journey
       </p>
       <p className="text-gray mt-12">
         I am a software engineer and MERN developer, and my journey began with

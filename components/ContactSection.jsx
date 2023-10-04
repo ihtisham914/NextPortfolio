@@ -1,12 +1,11 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
+import Tag from "./Tag";
 
 const ContactSection = () => {
   return (
     <section id="contact" className="my-8 pt-28">
-      <div className="flex items-center justify-center gap-4 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
-        <MdEmail /> <span className="uppercase">Contact</span>
-      </div>
+      <Tag icon={<MdEmail />} text="Contact" />
       <p className="text-5xl mt-16 font-light tracking-wide">
         Let's Work <span className="text-primarycolor">Together</span>
       </p>

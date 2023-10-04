@@ -12,7 +12,7 @@ import { links } from "@/public/data/navbar";
 const ProfileCard = () => {
   const [modal, setModal] = useState(false);
   return (
-    <div className="block lg:fixed xl:fixed lg:top-8 xl:top-8 border border-gray rounded-3xl  w-full lg:w-[25%] xl:w-[25%] h-[90%]">
+    <div className="block lg:fixed xl:fixed lg:top-8 xl:top-8 border-2 border-gray rounded-3xl  w-full lg:w-[25%] xl:w-[25%] h-[90%]">
       {/* OVERLAY */}
       {modal ? (
         <div
@@ -40,7 +40,7 @@ const ProfileCard = () => {
             <span>Menu</span>
             <div
               onClick={() => setModal(false)}
-              className="p-3 border border-gray rounded-full"
+              className="p-3 border-2 border-gray rounded-full"
             >
               <MdClose />
             </div>

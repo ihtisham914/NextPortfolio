@@ -1,14 +1,13 @@
 import React from "react";
 import { FaTools } from "react-icons/fa";
 import { skills } from "@/public/data/skills";
+import Tag from "./Tag";
 
 const SkillSection = () => {
   return (
     <section id="skills" className="my-8 pt-28">
       {/* TAG */}
-      <div className="flex items-center justify-center gap-4 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
-        <FaTools /> <span className="uppercase">Skills</span>
-      </div>
+      <Tag icon={<FaTools />} text="Skills" />
       <p className="text-5xl mt-16 font-light tracking-wide">
         My <span className="text-primarycolor">Advantages</span>
       </p>

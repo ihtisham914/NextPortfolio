@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
 import { FaBriefcase } from "react-icons/fa";
+import Tag from "./Tag";
 
 const ResumeSection = () => {
   return (
     <section id="resume" className="my-8 pt-16">
       {/* TAG */}
-      <div className="flex items-center justify-center gap-4 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
-        <FaBriefcase /> <span className="uppercase">resume</span>
-      </div>
+      <Tag icon={<FaBriefcase />} text="resume" />
       <p className="text-5xl mt-16 font-light tracking-wide">
         Education & <span className="text-primarycolor">Experience</span>
       </p>

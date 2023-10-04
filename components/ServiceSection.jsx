@@ -2,14 +2,13 @@ import React from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import { AiFillFormatPainter } from "react-icons/ai";
 import { MdSupport } from "react-icons/md";
+import Tag from "./Tag";
 
 const ServiceSection = () => {
   return (
     <section id="services" className="my-8 pt-28">
       {/* TAG */}
-      <div className="flex items-center justify-center gap-4 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
-        <FaLaptopCode /> <span className="uppercase">services</span>
-      </div>
+      <Tag icon={<FaLaptopCode />} text="services" />
       <p className="text-5xl mt-16 font-light tracking-wide">
         My <span className="text-primarycolor">Specialization</span>
       </p>

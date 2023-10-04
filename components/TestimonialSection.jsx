@@ -7,6 +7,7 @@ import {
 } from "react-icons/bi";
 import { reviews } from "@/public/data/testimonials";
 import SliderItem from "./SliderItem";
+import Tag from "./Tag";
 
 const TestimonialSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -21,9 +22,7 @@ const TestimonialSection = () => {
   return (
     <section id="testimonials" className="my-8 pt-28">
       {/* TAG */}
-      <div className="flex items-center justify-center gap-4 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
-        <BiSolidCommentDetail /> <span className="uppercase">Testimonial</span>
-      </div>
+      <Tag icon={<BiSolidCommentDetail />} text="Testimonial" />
       <p className="text-5xl mt-16 font-light tracking-wide">
         Trusted by{" "}
         <span className="text-primarycolor">Hundereds of clients</span>
@@ -44,13 +43,13 @@ const TestimonialSection = () => {
         <div className="flex items-center gap-8 mt-6">
           <div
             onClick={prevSlide}
-            className="p-2 border border-gray rounded-full text-3xl hover:text-primarycolor hover:border-primarycolor transition-all cursor-pointer"
+            className="p-2 border-2 border-gray rounded-full text-3xl hover:text-primarycolor hover:border-primarycolor transition-all cursor-pointer"
           >
             <BiChevronLeft />
           </div>
           <div
             onClick={nextSlide}
-            className="p-2 border border-gray rounded-full text-3xl hover:text-primarycolor hover:border-primarycolor transition-all cursor-pointer"
+            className="p-2 border-2 border-gray rounded-full text-3xl hover:text-primarycolor hover:border-primarycolor transition-all cursor-pointer"
           >
             <BiChevronRight />
           </div>

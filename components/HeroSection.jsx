@@ -3,6 +3,7 @@ import { AiFillHome } from "react-icons/ai";
 import { BsArrowDownCircleFill } from "react-icons/bs";
 import React from "react";
 import { motion, useScroll } from "framer-motion";
+import Tag from "./Tag";
 
 const HeroSection = () => {
   const { scrollYProgress } = useScroll();
@@ -13,9 +14,7 @@ const HeroSection = () => {
         style={{ scaleX: scrollYProgress }}
       />
       {/* TAG */}
-      <div className="flex items-center justify-center gap-3 py-2 px-5 text-white border border-gray rounded-full w-fit text-[12px]">
-        <AiFillHome /> <span className="uppercase">Introduce</span>
-      </div>
+      <Tag icon={<AiFillHome />} text="Introduce" />
       <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-light mt-16 leading-tight tracking-wide">
         Hello from <span className="text-primarycolor">Ihtisham</span>, Software
         Engineer and Web Developer
