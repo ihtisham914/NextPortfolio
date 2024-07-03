@@ -21,9 +21,9 @@ const ResumeSection = () => {
           <div className="h-36 w-[1px] bg-gray -mt-[5px] ml-[5px]"></div>
           <div>
             <div className="mt-8">
-              <p className="text-xl leading-5">Project Manager</p>
+              <p className="text-xl leading-5">Full Stack Developer</p>
               <p className="mt-2 text-gray">
-                Softipai - Ditigal Marketing Agency
+                Softipai - Digital Marketing Agency
               </p>
             </div>
           </div>
