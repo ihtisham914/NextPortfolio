@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaWordpressSimple } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiChakraui,
@@ -13,6 +13,7 @@ import {
 } from "react-icons/si";
 import { BsFillCloudArrowUpFill } from "react-icons/bs";
 import { BiLogoGraphql } from "react-icons/bi";
+import { FaElementor } from "react-icons/fa6";
 
 export const projects = [
   {
@@ -51,6 +52,39 @@ export const projects = [
       {
         name: "Cloundinary",
         icon: <BsFillCloudArrowUpFill />,
+      },
+    ],
+  },
+  {
+    name: "Power Stations for SRSP",
+    demo: "https://srspmhp.com/",
+    code: "https://srspmhp.com/",
+    image: "/srspmhp.png",
+    desc: "An online power station management system for SRSP",
+    tags: [
+      {
+        name: "NextJs",
+        icon: <SiNextdotjs />,
+      },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript />,
+      },
+      {
+        name: "Tailwind",
+        icon: <SiTailwindcss />,
+      },
+      {
+        name: "Node",
+        icon: <SiNodedotjs />,
+      },
+      {
+        name: "Express",
+        icon: <SiExpress />,
+      },
+      {
+        name: "MongoDb",
+        icon: <SiMongodb />,
       },
     ],
   },
@@ -121,6 +155,14 @@ export const projects = [
     desc: "An E-commerce website ",
     tags: [
       {
+        name: "HTML",
+        icon: <FaHtml5 />,
+      },
+      {
+        name: "CSS",
+        icon: <FaCss3Alt />,
+      },
+      {
         name: "PHP",
         icon: <SiPhp />,
       },
@@ -154,6 +196,64 @@ export const projects = [
     image: "/game.png",
     desc: "A mathimatics quiz game",
     tags: [
+      {
+        name: "HTML",
+        icon: <FaHtml5 />,
+      },
+      {
+        name: "CSS",
+        icon: <FaCss3Alt />,
+      },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript />,
+      },
+    ],
+  },
+  {
+    name: "Buy Social Today",
+    demo: "https://buysocialtoday.com/",
+    code: "https://buysocialtoday.com/",
+    image: "/buysocialtoday.png",
+    desc: "A social media marketing agency for boosting your online presence",
+    tags: [
+      {
+        name: "Wordpress",
+        icon: <FaWordpressSimple />,
+      },
+      {
+        name: "Elementor",
+        icon: <FaElementor />,
+      },
+      {
+        name: "HTML",
+        icon: <FaHtml5 />,
+      },
+      {
+        name: "CSS",
+        icon: <FaCss3Alt />,
+      },
+      {
+        name: "JavaScript",
+        icon: <SiJavascript />,
+      },
+    ],
+  },
+  {
+    name: "Get Music Viral",
+    demo: "https://getmusicviral.com/",
+    code: "https://getmusicviral.com/",
+    image: "/getmusicviral.png",
+    desc: "Boosts your Tiktok, Spotify and Youtube channels.",
+    tags: [
+      {
+        name: "Wordpress",
+        icon: <FaWordpressSimple />,
+      },
+      {
+        name: "Elementor",
+        icon: <FaElementor />,
+      },
       {
         name: "HTML",
         icon: <FaHtml5 />,

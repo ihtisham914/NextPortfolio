@@ -29,7 +29,7 @@ const ProjectSection = () => {
       {/* show image */}
       {modal && (
         <img
-          className="fixed top-[25%] sm:top-[20%] md:top-[20%] lg:top-0 xl:top-0 left-0 h-auto sm:h-auto md:h-auto lg:h-screen xl:h-screen w-[90vw] z-50"
+          className="fixed top-[25%] sm:top-[20%] md:top-[20%] lg:top-0 xl:top-0 left-0 h-auto sm:h-auto md:h-auto lg:h-screen xl:h-screen w-[90vw] z-50 object-contain"
           src={pic}
           alt="project picture"
         />
@@ -46,16 +46,14 @@ const ProjectSection = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`flex items-center justify-center ${
-              project.name === "Community cleanup" &&
+            className={`flex items-center justify-center ${project.name === "Community cleanup" &&
               "col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-2"
-            } p-4 border-2 border-gray hover:border-primarycolor rounded-3xl transition-all hover:-translate-y-2 hover:shadow-lg hover:shadow-gray`}
+              } p-4 border-2 border-gray hover:border-primarycolor rounded-3xl transition-all hover:shadow-lg hover:shadow-slate-800`}
           >
             <div
-              className={`${
-                project.name === "Community cleanup" &&
+              className={`${project.name === "Community cleanup" &&
                 "w-full flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row items-center justify-between"
-              }`}
+                }`}
             >
               {project.video ? (
                 <video
@@ -70,11 +68,10 @@ const ProjectSection = () => {
                     setModal(true);
                   }}
                   src={project.image}
-                  className={`rounded-2xl cursor-pointer ${
-                    project.name === "Community cleanup"
-                      ? "h-52 sm:h-52 md:h-96 lg:h-96 xl:h-96 w-80 sm:w-80 md:w-[50%] lg:w-[45%] xl:w-[50%]"
-                      : "h-52 w-80"
-                  }`}
+                  className={`mx-auto rounded-2xl cursor-pointer object-cover object-center ${project.name === "Community cleanup"
+                    ? "h-52 sm:h-52 md:h-96 lg:h-96 xl:h-96 w-80 sm:w-80 md:w-[50%] lg:w-[45%] xl:w-[50%]"
+                    : "h-52 w-80"
+                    }`}
                   loading="lazy"
                   height={1000}
                   width={1000}
@@ -83,10 +80,9 @@ const ProjectSection = () => {
               )}
               {/* tags */}
               <div
-                className={`${
-                  project.name === "Community cleanup" &&
+                className={`${project.name === "Community cleanup" &&
                   "flex flex-col gap-4 justify-between md:w-[45%] lg:w-[45%]"
-                }`}
+                  }`}
               >
                 <div className="flex items-center flex-wrap gap-2 mt-2">
                   {project.tags.map((tag, index) => (

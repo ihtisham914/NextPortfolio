@@ -36,7 +36,7 @@ const TestimonialSection = () => {
         >
           {/* SLIDE */}
           {reviews.map((item, index) => {
-            return activeIndex === index && <SliderItem item={item} />;
+            return activeIndex === index && <SliderItem key={index} item={item} />;
           })}
         </div>
         {/* navigation */}
